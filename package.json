@@ -1,22 +1,23 @@
 {
-  "name": "simplepush-client",
-  "version": "0.0.1",
-  "author": "Francisco Jordano <francisco@jordano.es>",
-  "description": "SimplePush client app (server part) for demoing in Firefox OS",
-  "scripts": {
-    "start": "node ./bin/start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arcturus/firefox-os-simplepush.git"
-  },
-  "dependencies" : {
-    "express": "~3.x",
-    "mongoq": "*",
-    "request": "*"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=0.8"
-  }
+    "name": "simplepush-client",
+    "version": "0.0.1",
+    "author": "Francisco Jordano <francisco@jordano.es>",
+    "description": "SimplePush client app (server part) for demoing in Firefox OS",
+    "scripts": {
+        "start": "node ./bin/start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arcturus/firefox-os-simplepush.git"
+    },
+    "dependencies": {
+        "express": "~4.x",
+        "mongoq": "*",
+        "body-parser": "^1.12.0",
+        "request": "*"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.8"
+    }
 }
