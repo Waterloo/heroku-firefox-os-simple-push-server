@@ -1,0 +1,9 @@
+{
+  "name": "Firefox OS Simple Push Server",
+  "description": "SimplePush API Server",
+  "logo": "https://mozorg.cdn.mozilla.net/media/img/styleguide/identity/firefoxos/guidelines-logo.8dca82e503b9.png",
+  "repository": "https://github.com/waterloo/heroku-firefox-os-simple-push-server",
+    "addons": [
+    "mangolab:sandbox"
+  ]
+}
