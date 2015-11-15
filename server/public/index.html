@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Firefox OS Simple Push Server</title>
-    
+
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
-    
+
     <style>
-    
-        *{
-        margin: 0px;
-        
+        * {
+            margin: 0px;
         }
         
-        html,body {
-        
+        html,
+        body {
             width: 100%;
             height: 100%;
-        
         }
         
         body {
-        
             background-color: #f0f0f0;
-        font-family: 'Fira Sans', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
             font-weight: 100;
-         text-align: center;
+            text-align: center;
         }
         
-        
         #box {
-        
-        width: 70%;
-        background-color: white;
-        margin: 0px auto;
-        padding: 10px;
-           
+            width: 70%;
+            background-color: white;
+            margin: 0px auto;
+            padding: 10px;
         }
         
         .endpoint {
-        
             color: #ff4e00;
+        }
         
+        hr {
+            color: #d1d1d1;
         }
         
         .img {
-        
             width: 100%;
-            margin:25px 0px;
+            margin: 25px 0px;
         }
     </style>
 </head>
 
 <body>
-   <div id="box">
-<img src="http://i.imgur.com/nCvnbKp.png" alt="firefox os" id="logo">
-      <br>
-      <br>
-    The Simple Push API provides Firefox OS apps the ability to be woken up to receive notifications. You could use Simple Push as a sync mechanism, or even to fetch the latest data from third party servers. 
-    <br>
-    <br>
-    <br>
-    <img src="http://i.imgur.com/wg1vZME.png" alt="" class="img">
-    
-    Register Post your channel id as post parameter 'client' to url <br> <span class="endpoint">/api/v1/register</span> <br><br>
+    <div id="box">
+        <img src="http://i.imgur.com/nCvnbKp.png" alt="firefox os" id="logo">
+        <br>
+        <br> The Simple Push API provides Firefox OS apps the ability to be woken up to receive notifications. You could use Simple Push as a sync mechanism, or even to fetch the latest data from third party servers.
+        <br>
+        <br>
+        <img src="http://i.imgur.com/wg1vZME.png" alt="" class="img">
 
-    Unregister Post your channel id as post parameter 'client' to url <br> <span class="endpoint">/api/v1/unregister</span> <br><br>
+        <h3>Register</h3>
+        <b>Post</b> your channel id as post parameter 'client' to url
+        <br> <span class="endpoint">/api/v1/register</span>
+        <br>
+        <br>
 
-    Send a message Post your channel id as 'client' and your message as 'message' to url <br> <span class="endpoint">/api/v1/</span> <br> <br>
+        <h3>Unregister</h3>
+         Post your channel id as post parameter 'client' to url
+        <br> <span class="endpoint">/api/v1/unregister</span>
+        <br>
+        <br>
 
-    Receive a message Get your channel id as get parameter 'client' to url <br> <span class="endpoint">/api/v1/[message number]?client=[client] </span>
-<br>
-<br>
-<br>
-    
-    <script>
-    
-        var endPointElements = document.getElementsByClassName('endpoint');
-        
-        for(var i = 0,limit = endPointElements.length; i<limit;i++) {
-        
-            endPointElements[i].innerHTML = window.location +endPointElements[i].innerHTML
-        
-        }
-    
-    </script>
-    </div><br>
-    Made with &#10084; by <a href="http://jithinsha.in">Jithin Sha</a>
+        <h3>Send a message</h3> Post your channel id as 'client' and your message as 'message' to url
+        <br> <span class="endpoint">/api/v1/</span>
+        <br>
+        <br>
+
+        <h3>Receive a message</h3> Get your channel id as get parameter 'client' to url
+        <br> <span class="endpoint">/api/v1/[message number]?client=[client] </span>
+        <br>
+        <br>
+        <br>
+
+        <script>
+            var endPointElements = document.getElementsByClassName('endpoint');
+
+            for (var i = 0, limit = endPointElements.length; i < limit; i++) {
+
+                endPointElements[i].innerHTML = window.location + endPointElements[i].innerHTML
+
+            }
+        </script>
+    </div>
+    <br> Made with &#10084; by <a href="http://jithinsha.in">Jithin Sha</a>
 </body>
+
 </html>
